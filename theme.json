@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "color1": "\u001b[91m",        
+    "color2": "\u001b[38;5;208m",  
+    "color3": "\u001b[93m",        
+    "color4": "\u001b[92m",        
+    "color5": "\u001b[94m",        
+    "color6": "\u001b[95m",        
+    "color7": "\u001b[35m"         
+  },
+  "reset": "\u001b[0m"
+}
