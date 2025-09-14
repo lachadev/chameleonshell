@@ -32,10 +32,6 @@ if [[ "$OS" == "Darwin" || "$OS" == "Linux" ]]; then
     python3 -m pip install --upgrade pip
     python3 -m pip install -r requirements.txt
 
-    # Run shell
-    echo "Running Chameleonshell..."
-    python3 shell.py
-
 elif [[ "$OS" == "MINGW"* || "$OS" == "CYGWIN"* || "$OS" == "MSYS"* ]]; then
     # Windows Git Bash / Cygwin / MSYS
     echo "Detected Windows environment"
@@ -58,12 +54,14 @@ elif [[ "$OS" == "MINGW"* || "$OS" == "CYGWIN"* || "$OS" == "MSYS"* ]]; then
     cd "$APP_DIR"
     python -m pip install --upgrade pip
     python -m pip install -r requirements.txt
-
-    # Run shell
-    echo "Running Chameleonshell..."
-    python shell.py
-
 else
     echo "Unsupported OS: $OS"
     exit 1
 fi
+
+echo
+echo "✅ Chameleonshell installed successfully!"
+echo "To start it, run:"
+echo
+echo "  cd $APP_DIR && python3 shell.py"
+echo
