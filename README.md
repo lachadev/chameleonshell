@@ -5,7 +5,7 @@
 
 One command install:
 ```
-curl -sSL https://raw.githubusercontent.com/yourusername/chameleonshell/main/chameleoninstall.sh | bash
+curl -sSL https://raw.githubusercontent.com/lachadev/chameleonshell/refs/heads/main/chameleoninstall.sh | bash
 ```
 
 Made with ❤️ by lachameleon
