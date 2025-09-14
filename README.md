@@ -2,7 +2,7 @@
 ### _shell so easy you'll never look back.._
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/lachadev/chameleonshell) ![GitHub repo size](https://img.shields.io/github/repo-size/lachadev/chameleonshell) 
-![Made by lach](https://github.com/lachadev/chameleonshell/madebylach.png)
+![Made by lach](https://github.com/lachadev/chameleonshell/blob/main/madebylacha.png?raw=true)
 
 One command install:
 ```
