@@ -13,7 +13,9 @@ DEFAULTS = {
     "running": True,
     "cwd": os.getcwd(),
     "playsound": 'True',
-    "quickanimation": 'False'
+    "quickanimation": 'False',
+    "fav1": 'projects/eg1',
+    "fav2": 'projects/eg2',
 }
 
 

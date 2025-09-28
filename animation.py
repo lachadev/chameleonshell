@@ -46,6 +46,7 @@ def play_sound(path):
                 raise OSError("Unsupported OS")
 
 if quickanimation == 'True':
+        subprocess.run('clear', shell=True, text=True)
         rainbow_print("""
         888                                  888            \x1b]8;;http://lachadev.github.io\x1b\\lachadev.github.io\x1b]8;;\x1b\\      
         888                                  888                         

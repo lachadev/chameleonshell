@@ -3,5 +3,7 @@
     "running": true,
     "cwd": "/Users/henrygranger/coding/python/chameleonshell",
     "playsound": "True",
-    "quickanimation": "False"
+    "quickanimation": "True",
+    "fav1": "projects/eg1",
+    "fav2": "hi"
 }

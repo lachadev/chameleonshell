@@ -10,6 +10,11 @@ import threading
 import platform
 import time
 import os
+# DO NOT DELETE
+state = config.state
+
+fav1 = state['fav1']
+fav2 = state['fav2']
 
 command = 'Woo, lachadev dc!'
 noescape = False
@@ -60,6 +65,17 @@ def toggle_quickanimation():
             hasanswredquickanimation = True
         else:
             print('Structurally incorrect. Try again. Case sensitive!!!')
+
+def setquickcd():
+    slotnumber = input('Which favourite directory would you like to set? (1 or 2) > ')
+    if slotnumber == '1':
+        fav1 = input('Type the path to the directory (Favourite 1) > ')
+        state["fav1"] = fav1
+        config.save(state)
+    if slotnumber == '2':
+        fav2 = input('Type the path to the directory (Favourite 2) > ')
+        state["fav2"] = fav2
+        config.save(state)
 
 def set_theme():
     # This is under construction
@@ -124,11 +140,17 @@ def handle_command(cmd):
         set_theme()
     elif cmd == 'donut':
         subprocess.run('python3 donut.py', shell=True, text=True)
+    elif cmd == 'setcd':
+        setquickcd()
+    elif cmd == 'cdf':
+        cdchoice = input('Favourite 1 or 2? > ')
+        if cdchoice == 1:
+            os.chdir
+
     else:
         subprocess.run(cmd, shell=True, text=True)
 
 # --- Main ---
-state = config.state
 user = state["user"]
 cwd = os.getcwd()
 hasansweredplaysound = False
